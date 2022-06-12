@@ -4,7 +4,7 @@ import png
 from pyqrcode import QRCode
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 from telegram import Update
-TOKEN = "<YOUR API TOKEN>"
+TOKEN = "5298900275:AAESkfRN82WLO7TxxfQayx_9NwXB9pbwfHg"
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO
 )
@@ -60,7 +60,7 @@ def main():
                           port=PORT,
                           url_path=TOKEN)
     updater.bot.set_webhook(
-        "https://<YOUR APP NAME>.herokuapp.com/" + TOKEN)
+        "https://mhqr.herokuapp.com/" + 5298900275:AAESkfRN82WLO7TxxfQayx_9NwXB9pbwfHg)
     updater.idle()
 
 
