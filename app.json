@@ -1,0 +1,44 @@
+{
+  "name": "Harshith QRCodE BoT",
+  "description": "Telegram bot helps to get QR code generator bot. Create your Fork now and Deploy it @MutyalaHarshith.",
+  "keywords": [
+    "telegram",
+    "harshith",
+    "qrcode"
+  ],
+  "logo": "https://telegra.ph/file/236794ce4bb2213eaae1e.jpg",
+  "success_url": "https://t.me/MutyalaHarshith",
+  "website": "https://t.me/MutyalaHarshith",
+  "repository": "https://github.com/MutyalaHarshith/QRCodE",
+  "env": {
+    "WEBHOOK": {
+      "description": "Setting this to ANYTHING will enable webhooks when in env mode",
+      "value": "ANYTHING"
+    },
+    "BOT_TOKEN": {
+      "description": "Your bot token, as a string.",
+      "value": "5388724473:AAE2KsfZIkUNzmQMVXyRZ8kc2A_8A23x93w"
+    },
+    "API_ID": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": "7175298"
+    },
+    "API_HASH": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": "ad1791ee9e640932900fcbf878bf0cae"
+    }
+  },
+  "addons": [
+  ],
+  "buildpacks": [{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  }, {
+    "url": "heroku/python"
+  }],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
